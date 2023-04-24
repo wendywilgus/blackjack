@@ -15,6 +15,13 @@ let messageEl = document.getElementById("message-el")
 let totalEl = document.getElementById("total-el");
 let cardsEl = document.getElementById("cards-el");
 
+let player = {
+    name: "Wendy",
+    chips: 145
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 //logic to get a random card back
 function getRandomCard() {
     let randomCard = Math.floor( Math.random() * 13 ) + 1;
