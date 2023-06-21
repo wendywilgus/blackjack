@@ -5,6 +5,13 @@
 // } else {
 //     console.log("Welcome to the Blackjack Game!")
 // } 
+let player = {
+    name: "Wendy",
+    chips: 200,
+    sayHello: function() {
+        console.log("Howdy!")
+    }
+}
 
 let cards = []
 let sum = 0
@@ -15,10 +22,6 @@ let messageEl = document.getElementById("message-el")
 let totalEl = document.getElementById("total-el");
 let cardsEl = document.getElementById("cards-el");
 
-let player = {
-    name: "Wendy",
-    chips: 145
-}
 
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips
